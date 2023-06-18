@@ -9,13 +9,13 @@ Berikut adalah langkah-langkah untuk menginstal dan menjalankan aplikasi ini:
 1. Clone repositori dari GitHub:
 
    ```shell
-   git clone https://github.com/zuramai/mazer.git
+   git clone https://github.com/abdullahalwafi/DoD-project.git
    ```
 
 2. Pindah ke direktori projek:
 
    ```shell
-   cd mazer
+   cd DoD-project
    ```
 
 3. Instal semua dependensi menggunakan Composer:
