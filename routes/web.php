@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin as ADMIN;
+use App\Http\Controllers\Landing as LANDING;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [LANDING\LandingController::class, 'index']);
+Route::get('/admin', [ADMIN\DashboardController::class, 'index']);
