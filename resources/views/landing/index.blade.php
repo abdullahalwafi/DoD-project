@@ -3,7 +3,7 @@
     <!-- Section Header -->
     <section class="section-header">
         <div class="section-header-image">
-            <img src="{{ asset('landing/img/header.jpg') }}" alt="Header">
+            <img src="{{ asset('assets/landing/img/header.jpg') }}" alt="Header">
         </div>
         <div class="container">
             <div class="section-header-inner">
@@ -34,17 +34,17 @@
         <div class="about-body">
             <div class="row slides">
                 <div class="col">
-                    <img src="{{ asset('landing/img/About/035-trekking.png') }}">
+                    <img src="{{ asset('assets/landing/img/About/035-trekking.png') }}">
                     <h2>ADVENTURE</h2>
                     <p>Dapatkan pengalaman berpetualang yang belum pernah anda rasakan sebelumnya hanya di Depok</p>
                 </div>
                 <div class="col">
-                    <img src="{{ asset('landing/img/About/028-book.png') }}">
+                    <img src="{{ asset('assets/landing/img/About/028-book.png') }}">
                     <h2>GUIDE</h2>
                     <p>Kami memberikan info - info seputar Depok mulai dari event dan destinasi terbaik</p>
                 </div>
                 <div class="col">
-                    <img src="{{ asset('landing/img/About/024-tent.png') }}">
+                    <img src="{{ asset('assets/landing/img/About/024-tent.png') }}">
                     <h2>STAY</h2>
                     <p>Anda tidak perlu kawatir akan menetap dimana karna kami menyediakan tiket Hotel terbaik</p>
                 </div>
@@ -59,7 +59,7 @@
         <div class="overlay">
             <div class="caption">
                 <h2>ENJOY BEUTY & friendliness OF</h2> <br>
-                <img src="{{ asset('landing/img/depok-island.png') }}" alt="Depok Island">
+                <img src="{{ asset('assets/landing/img/depok-island.png') }}" alt="Depok Island">
             </div>
         </div>
         <div class="texture-handler-bottom"></div>
@@ -77,7 +77,7 @@
         <div class="section-discover-body slides">
             <div class="col">
                 <a href="destination.html">
-                    <img src="{{ asset('landing/img/selfie.jpg') }}" alt="Destination">
+                    <img src="{{ asset('assets/landing/img/selfie.jpg') }}" alt="Destination">
                     <div class="caption">
                         <p>DESTINATION</p>
                         <div class="line"></div>
@@ -89,7 +89,7 @@
             </div>
             <div class="col">
                 <a href="culture.html">
-                    <img src="{{ asset('landing/img/culture.jpg') }}">
+                    <img src="{{ asset('assets/landing/img/culture.jpg') }}">
                     <div class="caption" alt="Culture">
                         <p>CULTURE</p>
                         <div class="line"></div>
@@ -101,7 +101,7 @@
             </div>
             <div class="col">
                 <a href="event.html">
-                    <img src="{{ asset('landing/img/event.jpg') }}">
+                    <img src="{{ asset('assets/landing/img/event.jpg') }}">
                     <div class="caption" alt="Event">
                         <p>EVENT</p>
                         <div class="line"></div>
@@ -113,7 +113,7 @@
             </div>
             <div class="col">
                 <a href="stay.html">
-                    <img src="{{ asset('landing/img/stay.jpg') }}">
+                    <img src="{{ asset('assets/landing/img/stay.jpg') }}">
                     <div class="caption" alt="Stay">
                         <p>WHERE TO STAY</p>
                         <div class="line"></div>
@@ -138,7 +138,7 @@
             <div class="row">
                 <div class="col-video">
                     <video controls>
-                        <source src="{{ asset('landing/img/explore.mp4') }}" type="video/mp4">
+                        <source src="{{ asset('assets/landing/img/explore.mp4') }}" type="video/mp4">
                         Your browser does not support HTML5 video.
                     </video>
                 </div>
@@ -146,28 +146,28 @@
                     <div class="row">
                         <div class="col" onclick="window.location.href='gallery.html'">
                             <img
-                                src="{{ asset('landing/img/Gallery/27573391_1831430933557419_8533318736831053824_n.jpg') }}">
+                                src="{{ asset('assets/landing/img/Gallery/27573391_1831430933557419_8533318736831053824_n.jpg') }}">
                             <div class="overlay">
                                 <span class="ion-search"></span>
                             </div>
                         </div>
                         <div class="col" onclick="window.location.href='gallery.html'">
                             <img
-                                src="{{ asset('landing/img/Gallery/26870845_1740142096076715_486825953067008000_n.jpg') }}">
+                                src="{{ asset('assets/landing/img/Gallery/26870845_1740142096076715_486825953067008000_n.jpg') }}">
                             <div class="overlay">
                                 <span class="ion-search"></span>
                             </div>
                         </div>
                         <div class="col" onclick="window.location.href='gallery.html'">
                             <img
-                                src="{{ asset('landing/img/Gallery/27880266_1798970387070331_5621832064107020288_n.jpg') }}">
+                                src="{{ asset('assets/landing/img/Gallery/27880266_1798970387070331_5621832064107020288_n.jpg') }}">
                             <div class="overlay">
                                 <span class="ion-search"></span>
                             </div>
                         </div>
                         <div class="col" onclick="window.location.href='gallery.html'">
                             <img
-                                src="{{ asset('landing/img/Gallery/29415561_163922580940067_2417069708558729216_n.jpg') }}">
+                                src="{{ asset('assets/landing/img/Gallery/29415561_163922580940067_2417069708558729216_n.jpg') }}">
                             <div class="overlay">
                                 <span class="ion-search"></span>
                             </div>
@@ -190,7 +190,7 @@
         <div class="section-tour-body">
             <div class="row">
                 <div class="col-1 slides">
-                    <img src="{{ asset('landing/img/pantai-kuta.jpg') }}">
+                    <img src="{{ asset('assets/landing/img/pantai-kuta.jpg') }}">
                     <div class="overlay">
                         <div class="caption">
                             <div class="caption-text">
@@ -209,7 +209,7 @@
                     </div>
                 </div>
                 <div class="col-1 slides">
-                    <img src="{{ asset('landing/img/temple.jpg') }}">
+                    <img src="{{ asset('assets/landing/img/temple.jpg') }}">
                     <div class="overlay">
                         <div class="caption">
                             <div class="caption-text">
@@ -230,7 +230,7 @@
             </div>
             <div class="row">
                 <div class="col-2 slides">
-                    <img src="{{ asset('landing/img/tanah-lot.jpeg') }}">
+                    <img src="{{ asset('assets/landing/img/tanah-lot.jpeg') }}">
                     <div class="overlay">
                         <div class="caption">
                             <div class="caption-text">
@@ -248,7 +248,7 @@
                     </div>
                 </div>
                 <div class="col-2 slides">
-                    <img src="{{ asset('landing/img/depok-bird-park.jpg') }}">
+                    <img src="{{ asset('assets/landing/img/depok-bird-park.jpg') }}">
                     <div class="overlay">
                         <div class="caption">
                             <div class="caption-text">
@@ -266,7 +266,7 @@
                     </div>
                 </div>
                 <div class="col-2 slides">
-                    <img src="{{ asset('landing/img/gunung.jpg') }}">
+                    <img src="{{ asset('assets/landing/img/gunung.jpg') }}">
                     <div class="overlay">
                         <div class="caption">
                             <div class="caption-text">
@@ -303,7 +303,7 @@
                             consequat. </p>
                         <div class="blockquote-user">
                             <div class="blockquote-avatar">
-                                <img src="{{ asset('landing/img/faces/clem-onojeghuo-2.jpg') }}" alt="Bae Hyo-Rin">
+                                <img src="{{ asset('assets/landing/img/faces/clem-onojeghuo-2.jpg') }}" alt="Bae Hyo-Rin">
                             </div>
                             <div class="blockquote-name">John Doe</div>
                         </div>
@@ -315,7 +315,7 @@
                             consequat. </p>
                         <div class="blockquote-user">
                             <div class="blockquote-avatar">
-                                <img src="{{ asset('landing/img/faces/joe-gardner-2.jpg') }}" alt="Bae Hyo-Rin">
+                                <img src="{{ asset('assets/landing/img/faces/joe-gardner-2.jpg') }}" alt="Bae Hyo-Rin">
                             </div>
                             <div class="blockquote-name">Jane Doe</div>
                         </div>
@@ -327,7 +327,7 @@
                             consequat. </p>
                         <div class="blockquote-user">
                             <div class="blockquote-avatar">
-                                <img src="{{ asset('landing/img/faces/clem-onojeghuo-3.jpg') }}" alt="Bae Hyo-Rin">
+                                <img src="{{ asset('assets/landing/img/faces/clem-onojeghuo-3.jpg') }}" alt="Bae Hyo-Rin">
                             </div>
                             <div class="blockquote-name">John Roe</div>
                         </div>
@@ -353,7 +353,7 @@
         <div class="section-news-body">
             <div class="row slides">
                 <div class="col">
-                    <img src="{{ asset('landing/img/news/039443100_1523457714-IMG-20180411-WA0038.jpg') }}">
+                    <img src="{{ asset('assets/landing/img/news/039443100_1523457714-IMG-20180411-WA0038.jpg') }}">
                     <div class="overlay">
                         <a href="single-news.html">
                             <p class="text-top"> 10 Ribu Sepeda Tua dari 30 Negara Kumpul di Depok</p>
@@ -362,7 +362,7 @@
                     </div>
                 </div>
                 <div class="col-2">
-                    <img src="{{ asset('landing/img/news/038321800_1523380452-IMG-20180410-WA0031.jpg') }}">
+                    <img src="{{ asset('assets/landing/img/news/038321800_1523380452-IMG-20180410-WA0031.jpg') }}">
                     <div class="overlay">
                         <a href="single-news.html">
                             <p class="text-top">Keistimewaan Depok di Mata Dubes Mesir</p>
@@ -371,7 +371,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <img src="{{ asset('landing/img/news/023053600_1523534851-IMG-20180412-WA0034.jpg') }}">
+                    <img src="{{ asset('assets/landing/img/news/023053600_1523534851-IMG-20180412-WA0034.jpg') }}">
                     <div class="overlay">
                         <a href="single-news.html">
                             <p class="text-top">Aksi Polres Badung Tangkal Hoaks</p>
