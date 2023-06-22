@@ -11,7 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        // 
+        Schema::create('jenis_wisata', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('nama');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -19,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('jenis_wisata');
     }
 };
