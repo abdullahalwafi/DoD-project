@@ -41,7 +41,7 @@ Berikut adalah langkah-langkah untuk menginstal dan menjalankan aplikasi ini:
 7. Migrasikan database:
 
    ```shell
-   php artisan migrate
+   php artisan migrate:fresh --seed
    ```
 
 8. Jalankan server pengembangan:
