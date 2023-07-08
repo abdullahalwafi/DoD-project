@@ -137,10 +137,10 @@
         <div class="section-gallery-body">
             <div class="row">
                 <div class="col-video">
-                    <video controls>
-                        <source src="{{ asset('assets/landing/img/explore.mp4') }}" type="video/mp4">
-                        Your browser does not support HTML5 video.
-                    </video>
+                    <iframe src="https://www.youtube.com/embed/WNTqtWu3is8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
                 <div class="col-image">
                     <div class="row">
@@ -303,7 +303,8 @@
                             consequat. </p>
                         <div class="blockquote-user">
                             <div class="blockquote-avatar">
-                                <img src="{{ asset('assets/landing/img/faces/clem-onojeghuo-2.jpg') }}" alt="Bae Hyo-Rin">
+                                <img src="{{ asset('assets/landing/img/faces/clem-onojeghuo-2.jpg') }}"
+                                    alt="Bae Hyo-Rin">
                             </div>
                             <div class="blockquote-name">John Doe</div>
                         </div>
@@ -327,7 +328,8 @@
                             consequat. </p>
                         <div class="blockquote-user">
                             <div class="blockquote-avatar">
-                                <img src="{{ asset('assets/landing/img/faces/clem-onojeghuo-3.jpg') }}" alt="Bae Hyo-Rin">
+                                <img src="{{ asset('assets/landing/img/faces/clem-onojeghuo-3.jpg') }}"
+                                    alt="Bae Hyo-Rin">
                             </div>
                             <div class="blockquote-name">John Roe</div>
                         </div>
