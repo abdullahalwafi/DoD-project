@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Komentar extends Model
 {
     use HasFactory;
+    protected $table = 'komentar';
+    protected $guarded = ['id'];
+    public function users()
+    {
+        return $this->belongsTo(User::class);
+    }
+    public function wisata()
+    {
+        return $this->belongsTo(Wisata::class);
+    }
 }

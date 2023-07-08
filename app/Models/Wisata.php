@@ -18,4 +18,8 @@ class Wisata extends Model
     {
         return $this->belongsTo(Kecamatan::class);
     }
+    public function komentar()
+    {
+        return $this->hasMany(Komentar::class, 'wisata_id', 'id');
+    }
 }
