@@ -36,10 +36,13 @@
             <div class="navbar-item">
                 <a href="{{ url('/') }}" class="navbar-title">{{ config('app.name', 'Laravel') }}</a>
                 <ul>
-                    <li><a href="destination.html">Destination</a></li>
+                    <li><a href="{{ url('/') }}">Home</a></li>
+                    <li><a href="{{ url('/kecamatan') }}">Kecamatan</a></li>
+                    <li><a href="{{ url('/jenis') }}">Jenis Wisata</a></li>
+                    {{--  <li><a href="destination.html">Destination</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a data-slide="slides" data-slide-target="#discover">Discover</a></li>
-                    <li><a href="news.html"> News</a></li>
+                    <li><a href="news.html"> News</a></li>  --}}
                     <li><button class="btn-login" id="openLogin">LOGIN</button></li>
                 </ul>
             </div>
