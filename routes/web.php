@@ -24,8 +24,9 @@ Route::get('/admin/jenis/create',[ADMIN\JenisWisataController::class, 'create'])
 Route::post('/admin/jenis',[ADMIN\JenisWisataController::class, 'store']);
 Route::get('/admin/jenis/edit/{id}',[ADMIN\JenisWisataController::class, 'edit']);
 Route::put('/admin/jenis/update/{id}',[ADMIN\JenisWisataController::class, 'update']);
-Route::delete('admin/jenis/destroy/{id}',[ADMIN\JenisWisataController::class, 'destroy']);
+Route::delete('/admin/jenis/destroy/{id}',[ADMIN\JenisWisataController::class, 'destroy']);
 
-
+// Kecamatan
 Route::get('/admin/kecamatan', [ADMIN\KecamatanController::class, 'index']);
-
+Route::get('/admin/kecamatan/create',[ADMIN\KecamatanController::class, 'create']);
+Route::post('/admin/kecamatan',[ADMIN\KecamatanController::class, 'store']);

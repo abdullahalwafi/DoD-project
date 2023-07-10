@@ -23,7 +23,7 @@
                 <h4 class="card-title">Daftar Jenis Wisata Tersedia</h4>
               </div>
               <div class="card-body">
-                <a href="{{ url('admin/jenis/create') }}" class="btn btn-success">+ Tambah Buku</a> 
+                <a href="{{ url('admin/jenis/create') }}" class="btn btn-success">+ Tambah Jenis Wisata</a> 
                 <p class="card-description">                
                 </p>
                 <table class="table table-striped" id="table1">

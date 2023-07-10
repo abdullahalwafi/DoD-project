@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Kecamatan;
 
 class KecamatanController extends Controller
 {
@@ -12,7 +13,8 @@ class KecamatanController extends Controller
      */
     public function index()
     {
-        //
+        $Camats = Kecamatan::all();
+        return view('admin.kecamatan.index', compact('Camats'));
     }
 
     /**
@@ -28,15 +30,7 @@ class KecamatanController extends Controller
      */
     public function store(Request $request)
     {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
+        return view('admin.kecamatan.create');
     }
 
     /**
@@ -44,7 +38,12 @@ class KecamatanController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $validated = $request->validate([
+            'nama' => 'required|min:5|max:50',
+        ]);
+        
+        Kecamatan::create($validated);
+        return redirect('/admin/Kecamatan');
     }
 
     /**

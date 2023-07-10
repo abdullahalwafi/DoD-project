@@ -33,8 +33,7 @@ class JenisWisataController extends Controller
         $validated = $request->validate([
             'nama' => 'required|min:5|max:50',
         ]);
-
-        // simpan data ke dalam table books
+        
         JenisWisata::create($validated);
         return redirect('/admin/jenis');
     }
