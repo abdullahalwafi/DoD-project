@@ -15,6 +15,7 @@
 <!-- Need: Apexcharts -->
 <script src="{{asset('assets/admin/assets/extensions/apexcharts/apexcharts.min.js')}}"></script>
 <script src="{{asset('assets/admin/assets/static/js/pages/dashboard.js')}}"></script>
+@stack('script')
 </body>
 
 </html>

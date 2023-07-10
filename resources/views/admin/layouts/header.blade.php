@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{{ asset('assets/admin/assets/compiled/css/app-dark.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/admin/assets/compiled/css/app.css') }}" />
     <script src="{{ asset('assets/admin/assets/static/js/initTheme.js') }}"></script>
+    @stack('style')
 </head>
 
 <body>
@@ -98,6 +99,13 @@
                             <a href="{{ url('/admin/komentar') }}" class="sidebar-link">
                                 <i class="bi bi-hexagon-fill"></i>
                                 <span>Komentar</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="{{ url('/admin/news') }}" class="sidebar-link">
+                                <i class="bi bi-star-fill"></i>
+                                <span>News</span>
                             </a>
                         </li>
 

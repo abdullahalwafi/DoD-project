@@ -52,6 +52,10 @@ Berikut adalah langkah-langkah untuk menginstal dan menjalankan aplikasi ini:
 
    Aplikasi akan diakses melalui URL [http://localhost:8000](http://localhost:8000).
 
+9. Akses generate storage:
+
+   Generate storage diakses untuk mengenerate penyimpanan ke public. Akses melalui URL [http://localhost:8000/generate](http://localhost:8000/generate).
+
 ## Fitur
 
 Aplikasi ini memiliki beberapa fitur utama yang dibangun menggunakan berbagai komponen dan pustaka dalam ekosistem Laravel, antara lain:
