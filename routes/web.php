@@ -33,3 +33,5 @@ Route::post('/admin/kecamatan',[ADMIN\KecamatanController::class, 'store']);
 Route::get('/admin/kecamatan/edit/{id}',[ADMIN\KecamatanController::class, 'edit']);
 Route::put('/admin/kecamatan/update/{id}',[ADMIN\KecamatanController::class, 'update']);
 Route::delete('/admin/kecamatan/destroy/{id}',[ADMIN\KecamatanController::class, 'destroy']);
+
+Route::resource('/admin/news', ADMIN\NewsController::class);

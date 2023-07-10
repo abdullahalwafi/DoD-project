@@ -3,7 +3,7 @@
     <!-- Section Header -->
     <section class="section-header">
         <div class="section-header-image">
-            <img src="{{ asset('assets/landing/img/header.jpg') }}" alt="Header">
+            <img src="{{ asset('assets/landing/img/header2.png') }}" alt="Header">
         </div>
         <div class="container">
             <div class="section-header-inner">
@@ -58,8 +58,7 @@
         <div class="texture-handler-top"></div>
         <div class="overlay">
             <div class="caption">
-                <h2>ENJOY BEUTY & friendliness OF</h2> <br>
-                <img src="{{ asset('assets/landing/img/depok-island.png') }}" alt="Depok Island">
+                <h1 class="section-title">ENJOY BEUTY & friendliness OF</h1> <br>
             </div>
         </div>
         <div class="texture-handler-bottom"></div>
@@ -89,7 +88,7 @@
             </div>
             <div class="col">
                 <a href="culture.html">
-                    <img src="{{ asset('assets/landing/img/culture.jpg') }}">
+                    <img src="https://img.freepik.com/free-vector/film-design-concept_1284-13882.jpg?w=740&t=st=1688974282~exp=1688974882~hmac=b37b2a9a20c89db78a41d0e95f8ad13c89edd3f8687cd6b24452835e7a430dc2">
                     <div class="caption" alt="Culture">
                         <p>CULTURE</p>
                         <div class="line"></div>
@@ -101,7 +100,7 @@
             </div>
             <div class="col">
                 <a href="event.html">
-                    <img src="{{ asset('assets/landing/img/event.jpg') }}">
+                    <img src="https://img.freepik.com/free-vector/film-design-concept_1284-13882.jpg?w=740&t=st=1688974282~exp=1688974882~hmac=b37b2a9a20c89db78a41d0e95f8ad13c89edd3f8687cd6b24452835e7a430dc2">
                     <div class="caption" alt="Event">
                         <p>EVENT</p>
                         <div class="line"></div>
@@ -113,7 +112,7 @@
             </div>
             <div class="col">
                 <a href="stay.html">
-                    <img src="{{ asset('assets/landing/img/stay.jpg') }}">
+                    <img src="https://img.freepik.com/free-vector/film-design-concept_1284-13882.jpg?w=740&t=st=1688974282~exp=1688974882~hmac=b37b2a9a20c89db78a41d0e95f8ad13c89edd3f8687cd6b24452835e7a430dc2">
                     <div class="caption" alt="Stay">
                         <p>WHERE TO STAY</p>
                         <div class="line"></div>
