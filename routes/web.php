@@ -30,3 +30,6 @@ Route::delete('/admin/jenis/destroy/{id}',[ADMIN\JenisWisataController::class, '
 Route::get('/admin/kecamatan', [ADMIN\KecamatanController::class, 'index']);
 Route::get('/admin/kecamatan/create',[ADMIN\KecamatanController::class, 'create']);
 Route::post('/admin/kecamatan',[ADMIN\KecamatanController::class, 'store']);
+Route::get('/admin/kecamatan/edit/{id}',[ADMIN\KecamatanController::class, 'edit']);
+Route::put('/admin/kecamatan/update/{id}',[ADMIN\KecamatanController::class, 'update']);
+Route::delete('/admin/kecamatan/destroy/{id}',[ADMIN\KecamatanController::class, 'destroy']);

@@ -22,7 +22,7 @@ class KecamatanController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.kecamatan.create');
     }
 
     /**
@@ -30,7 +30,12 @@ class KecamatanController extends Controller
      */
     public function store(Request $request)
     {
-        return view('admin.kecamatan.create');
+        $validated = $request->validate([
+            'nama' => 'required|min:4|max:50',
+        ]);
+        
+        Kecamatan::create($validated);
+        return redirect('/admin/kecamatan');
     }
 
     /**
@@ -38,12 +43,10 @@ class KecamatanController extends Controller
      */
     public function edit(string $id)
     {
-        $validated = $request->validate([
-            'nama' => 'required|min:5|max:50',
+        $Kecamatan = Kecamatan::find($id);
+        return view('admin.kecamatan.edit', [
+            'Kecamatan' => $Kecamatan
         ]);
-        
-        Kecamatan::create($validated);
-        return redirect('/admin/Kecamatan');
     }
 
     /**
@@ -51,7 +54,16 @@ class KecamatanController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $Kecamatan = Kecamatan::find($id);
+
+        $validated = $request->validate([
+            'nama' => 'required|min:4|max:50',            
+        ]);
+
+        $Kecamatan->nama = $request->input('nama');        
+        $Kecamatan->save();
+        
+        return redirect('/admin/kecamatan')->with('success', 'Data berhasil diupdate');
     }
 
     /**
@@ -59,6 +71,9 @@ class KecamatanController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        //mencari data berdasarkan id
+        $Kecamatan = Kecamatan::find($id);
+        $Kecamatan->delete();
+        return redirect('/admin/kecamatan')->with('success', 'Data berhasil dihapus');
     }
 }

@@ -31,9 +31,9 @@ class JenisWisataController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'nama' => 'required|min:5|max:50',
+            'nama' => 'required|min:4|max:50',
         ]);
-        
+
         JenisWisata::create($validated);
         return redirect('/admin/jenis');
     }
@@ -57,7 +57,7 @@ class JenisWisataController extends Controller
         $JenisWisata = JenisWisata::find($id);
 
         $validated = $request->validate([
-            'nama' => 'required|min:5|max:50',            
+            'nama' => 'required|min:4|max:50',            
         ]);
 
         $JenisWisata->nama = $request->input('nama');        
