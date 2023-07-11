@@ -14,7 +14,7 @@ class JenisWisataController extends Controller
     public function index()
     {
         $JeWis = JenisWisata::all();
-        return view('views.landing.jenis.index', compact('JeWis'));
+        return view('landing.jenis.index', compact('JeWis'));
     }
 
     /**

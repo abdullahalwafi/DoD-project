@@ -28,7 +28,7 @@ Route::put('/admin/jenis/update/{id}', [ADMIN\JenisWisataController::class, 'upd
 Route::delete('/admin/jenis/destroy/{id}', [ADMIN\JenisWisataController::class, 'destroy']);
 
 // Landing Page Jenis Wisata
-Route::get('/jenis_kecamatan', [LANDING\JenisKecamatanController::class, 'index']);
+Route::get('/jenis_wisata', [LANDING\JenisWisataController::class, 'index']);
 
 // Landing Page Kecamatan
 
