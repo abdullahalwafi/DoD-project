@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Landing;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\JenisWisata;
 
 class JenisWisataController extends Controller
 {
@@ -12,7 +13,8 @@ class JenisWisataController extends Controller
      */
     public function index()
     {
-        //
+        $JeWis = JenisWisata::all();
+        return view('landing.jenis.index', compact('JeWis'));
     }
 
     /**
