@@ -17,7 +17,7 @@
                 <h4 class="card-title">Edit Jenis Wisata</h4>
               </div>
               <div class="card-body">                
-                
+
             @if (count($errors) > 0)
             <div class="alert alert-danger">
                 <ul>

@@ -29,14 +29,17 @@ class JenisWisataController extends Controller
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
-    {
-        $validated = $request->validate([
-            'nama' => 'required|min:4|max:50',
-        ]);
+{
+    $validated = $request->validate([
+        'nama' => 'required|min:4|max:50',
+    ]);
 
-        JenisWisata::create($validated);
-        return redirect('/admin/jenis');
-    }
+    JenisWisata::create([
+        'nama' => $validated['nama'],
+    ]);
+
+    return redirect('/admin/jenis')->with('success', 'Data berhasil ditambahkan');
+}
 
     /**
      * Show the form for editing the specified resource.
@@ -53,18 +56,19 @@ class JenisWisataController extends Controller
      * Update the specified resource in storage.
      */
     public function update(Request $request, string $id)
-    {        
-        $JenisWisata = JenisWisata::find($id);
+{
+    $JenisWisata = JenisWisata::find($id);
 
-        $validated = $request->validate([
-            'nama' => 'required|min:4|max:50',            
-        ]);
+    $validated = $request->validate([
+        'nama' => 'required|min:4|max:50',
+    ]);
 
-        $JenisWisata->nama = $request->input('nama');        
-        $JenisWisata->save();
-        
-        return redirect('/admin/jenis')->with('success', 'Data berhasil diupdate');
-    }
+    $JenisWisata->nama = $validated['nama'];
+
+    $JenisWisata->save();
+    return redirect('/admin/jenis')->with('success', 'Data berhasil diupdate');
+}
+
 
     /**
      * Remove the specified resource from storage.
