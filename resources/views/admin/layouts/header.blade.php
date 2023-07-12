@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="{{ asset('assets/admin/assets/compiled/css/app-dark.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/admin/assets/compiled/css/app.css') }}" />
     <script src="{{ asset('assets/admin/assets/static/js/initTheme.js') }}"></script>
+    <link rel="stylesheet" href="{{asset('assets/admin/assets/extensions/simple-datatables/style.css')}}" />
+    <link rel="stylesheet" href="{{asset('assets/admin/assets/compiled/css/table-datatable.css')}}" />
 </head>
 
 <body>

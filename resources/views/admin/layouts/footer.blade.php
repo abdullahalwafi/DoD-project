@@ -7,14 +7,16 @@
 </footer>
 </div>
 </div>
-<script src="{{asset('assets/admin/assets/static/js/components/dark.js')}}"></script>
-<script src="{{asset('assets/admin/assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js')}}"></script>
+<script src="{{ asset('assets/admin/assets/static/js/components/dark.js') }}"></script>
+<script src="{{ asset('assets/admin/assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
 
-<script src="{{asset('assets/admin/assets/compiled/js/app.js')}}"></script>
+<script src="{{ asset('assets/admin/assets/compiled/js/app.js') }}"></script>
 
 <!-- Need: Apexcharts -->
-<script src="{{asset('assets/admin/assets/extensions/apexcharts/apexcharts.min.js')}}"></script>
-<script src="{{asset('assets/admin/assets/static/js/pages/dashboard.js')}}"></script>
+<script src="{{ asset('assets/admin/assets/extensions/apexcharts/apexcharts.min.js') }}"></script>
+<script src="{{ asset('assets/admin/assets/static/js/pages/dashboard.js') }}"></script>
+<script src="{{asset('assets/admin/assets/extensions/simple-datatables/umd/simple-datatables.js')}}"></script>
+<script src="{{asset('assets/admin/assets/static/js/pages/simple-datatables.js')}}"></script>
 </body>
 
 </html>
