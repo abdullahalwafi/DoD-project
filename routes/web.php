@@ -27,10 +27,6 @@ Route::get('/admin/jenis/edit/{id}', [ADMIN\JenisWisataController::class, 'edit'
 Route::put('/admin/jenis/update/{id}', [ADMIN\JenisWisataController::class, 'update']);
 Route::delete('/admin/jenis/destroy/{id}', [ADMIN\JenisWisataController::class, 'destroy']);
 
-// Landing Page Jenis Wisata
-Route::get('/jenis_wisata', [LANDING\JenisWisataController::class, 'index']);
-
-// Landing Page Kecamatan
 
 // Kecamatan
 Route::get('/admin/kecamatan', [ADMIN\KecamatanController::class, 'index']);
@@ -39,6 +35,10 @@ Route::post('/admin/kecamatan', [ADMIN\KecamatanController::class, 'store']);
 Route::get('/admin/kecamatan/edit/{id}', [ADMIN\KecamatanController::class, 'edit']);
 Route::put('/admin/kecamatan/update/{id}', [ADMIN\KecamatanController::class, 'update']);
 Route::delete('/admin/kecamatan/destroy/{id}', [ADMIN\KecamatanController::class, 'destroy']);
+
+// Landing Page Jenis Wisata dan Kecamatan
+Route::get('/jenis_wisata', [LANDING\JenisWisataController::class, 'index']);
+Route::get('/kecamatan', [LANDING\KecamatanController::class, 'index']);
 
 Route::resource('/admin/news', ADMIN\NewsController::class);
 Route::get('/generate', function () {
