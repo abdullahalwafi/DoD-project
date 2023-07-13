@@ -120,7 +120,7 @@
                   </div>
                   <div class="content-desc-text">       
                     <ul class="breadcrumb-post">                      
-                      <li><i class="ion-person"></i> Admin</li>
+                      <li><i class="ion-person"></i>229.670 Jiwa</li>
                     </ul>             
                     <p>
                       Beji adalah salah satu kecamatan di Kota Depok, Jawa Barat. Dalam wilayah ini terdapat berbagai universitas, diantaranya Universitas Indonesia, Universitas Gunadarma dan Bina Sarana Informatika. Selain itu, ada juga beberapa stasiun kereta diantaranya Stasiun Pondok Cina dan Stasiun Universitas Indonesia.
@@ -140,7 +140,7 @@
                   </div>
                   <div class="content-desc-text"> 
                     <ul class="breadcrumb-post">                      
-                      <li><i class="ion-person"></i> Admin</li>
+                      <li><i class="ion-person"></i>138.070 Jiwa</li>
                     </ul>                   
                     <p>
                       Bojongsari adalah sebuah kecamatan yang terletak di Kota Depok, Jawa Barat.
@@ -160,7 +160,7 @@
                   </div>
                   <div class="content-desc-text">    
                     <ul class="breadcrumb-post">                      
-                      <li><i class="ion-person"></i> Admin</li>
+                      <li><i class="ion-person"></i>173.070 Jiwa</li>
                     </ul>                
                     <p>
                       Cilodong adalah sebuah kecamatan di Kota Depok, Jawa Barat. Dulunya kecamatan ini merupakan pemekaran dari Kecamatan Sukmajaya. Di kecamatan ini terdapat Terminal Kampung Sawah dan Stasiun Pondok Rajeg.
@@ -180,7 +180,7 @@
                   </div>
                   <div class="content-desc-text">
                     <ul class="breadcrumb-post">                      
-                      <li><i class="ion-person"></i> Admin</li>
+                      <li><i class="ion-person"></i>334.990 Jiwa</li>
                     </ul>                      
                     <p>
                       Cimanggis adalah sebuah kecamatan di Kota Depok, Jawa Barat. Kecamatan Cimanggis berada di wilayah Depok sebelah timur, berada pada ketinggian ± 115 m di atas permukaan laut dan daerah ini mempunyai curah hujan rata-rata 200,91 mm/tahun.
@@ -200,7 +200,7 @@
                   </div>
                   <div class="content-desc-text">   
                     <ul class="breadcrumb-post">                      
-                      <li><i class="ion-person"></i> Admin</li>
+                      <li><i class="ion-person"></i>148.770 Jiwa</li>
                     </ul>                  
                     <p>
                       Cinere, sebelumnya memiliki nama Tjikanyere atau Tjingerek adalah salah satu kecamatan di Kota Depok, Jawa Barat. Pusat pemerintahannya berada di Kelurahan Cinere. Sebelum berdiri sebagai kecamatan yang mandiri, wilayah Cinere termasuk bagian dari Kecamatan Limo.
@@ -211,7 +211,7 @@
                 </div>
               </div>
             </div>
-            {{--  <div class="aside">
+            <div class="aside">
               <div class="row">
                 <div class="aside-content">
                   <form method="POST">
@@ -229,28 +229,26 @@
                   </div>
                   <div class="content-body">
                     <ul style="padding: 0;list-style: none;">
-                      <li>News</li>
-                      <li>Culture</li>
-                      <li>Event</li>
-                      <li>Adventure</li>
+                      <li>Tempat Wisata</li>
+                      <li>Jenis Wisata</li>
                     </ul>
                   </div>
                 </div>
                 <div class="aside-content">
                   <div class="content-title">
-                    <b>REKOMENDASI</b>
+                    <b>REKOMENDASI WISATA</b>
                   </div>
                   <div class="content-body">
                     <ul style="padding: 0;list-style: none;">
-                      <li>Lorem Ipsum Dolor</li>
-                      <li>Lorem Ipsum Dolor</li>
-                      <li>Lorem Ipsum Dolor</li>
-                      <li>Lorem Ipsum Dolor</li>
+                      <li>Masjid Kubah Mas</li>
+                      <li>Taman Wiladatika</li>
+                      <li>Alun - Alun Kota Depok</li>
+                      <li>Arung Jeram Ciliwung</li>
                     </ul>
                   </div>
                 </div>
               </div>
-            </div>  --}}
+            </div>
           </div>
         </div>
       </section>
