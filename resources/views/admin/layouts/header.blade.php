@@ -15,6 +15,7 @@
     <script src="{{ asset('assets/admin/assets/static/js/initTheme.js') }}"></script>
     <link rel="stylesheet" href="{{asset('assets/admin/assets/extensions/simple-datatables/style.css')}}" />
     <link rel="stylesheet" href="{{asset('assets/admin/assets/compiled/css/table-datatable.css')}}" />
+    @stack('style')
 </head>
 
 <body>
@@ -100,6 +101,13 @@
                             <a href="{{ url('/admin/komentar') }}" class="sidebar-link">
                                 <i class="bi bi-hexagon-fill"></i>
                                 <span>Komentar</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="{{ url('/admin/news') }}" class="sidebar-link">
+                                <i class="bi bi-star-fill"></i>
+                                <span>News</span>
                             </a>
                         </li>
 

@@ -17,6 +17,7 @@
 <script src="{{ asset('assets/admin/assets/static/js/pages/dashboard.js') }}"></script>
 <script src="{{asset('assets/admin/assets/extensions/simple-datatables/umd/simple-datatables.js')}}"></script>
 <script src="{{asset('assets/admin/assets/static/js/pages/simple-datatables.js')}}"></script>
+@stack('script')
 </body>
 
 </html>

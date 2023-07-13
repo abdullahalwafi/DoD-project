@@ -1023,7 +1023,7 @@ hr {
   } 
 }
 
-.section-gallery-body .row .col-video video {
+.section-gallery-body .row .col-video iframe {
   width: 100%;
   height: 100%;
   display: block;
