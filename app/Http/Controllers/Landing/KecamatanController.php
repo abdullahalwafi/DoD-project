@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Landing;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Kecamatan;
 
 class KecamatanController extends Controller
 {
@@ -12,7 +13,8 @@ class KecamatanController extends Controller
      */
     public function index()
     {
-        //
+        $Camats = Kecamatan::all();
+        return view('landing.kecamatan.index', compact('Camats'));
     }
 
     /**
