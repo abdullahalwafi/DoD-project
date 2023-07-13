@@ -37,7 +37,7 @@
                     <tbody>
                       @foreach ($JeWis as $JenisWisata)
                       <tr>
-                        <td> {{ $loop->iteration }}</td>
+                        <td> {{ $loop->iteration }} </td>
                         <td> {{ $JenisWisata->nama}} </td>
                         <td>                          
                           <a href="{{ url('/admin/jenis/edit', $JenisWisata->id) }}" class="btn btn-warning btn-sm">Edit</a> 

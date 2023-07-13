@@ -99,7 +99,8 @@
             
           </form>
         </div>  --}}
-      </div>
+      </div>      
+
       <div class="single-body">
         <div class="col">                    
           <img src="{{ asset('assets/landing/img/jenis/alam.jpg') }}">
@@ -112,7 +113,7 @@
             </div>
           </div>
         </div>  
-        
+      
         <div class="col">                    
           <img src="{{ asset('assets/landing/img/jenis/belanja.jpg') }}">
           <div class="overlay">
