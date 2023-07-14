@@ -18,7 +18,7 @@ use App\Http\Controllers\Landing as LANDING;
 
 Route::get('/', [LANDING\LandingController::class, 'index']);
 Route::get('/admin', [ADMIN\DashboardController::class, 'index']);
-<<<<<<< HEAD
+
 Route::get('/admin/wisata', [ADMIN\WisataController::class, 'index']);
 Route::get('/admin/wisata/edit/{id}', [ADMIN\WisataController::class, 'edit']);
 Route::get('/admin/wisata/create', [ADMIN\WisataController::class, 'create']);
@@ -30,8 +30,7 @@ Route::post('/komentar/store', [ADMIN\KomentarController::class, 'store']);
 Route::delete('/admin/komentar/destroy/{id}', [ADMIN\KomentarController::class, 'destroy']);
 
 Route::get('/wisata', [LANDING\WisataController::class, 'index']);
-Route::get('/wisata/show/{id}', [LANDING\WisataController::class, 'show'])->name('wisata.show');;
-=======
+Route::get('/wisata/show/{id}', [LANDING\WisataController::class, 'show'])->name('wisata.show');
 
 // Database Jenis Wisata
 Route::get('/admin/jenis', [ADMIN\JenisWisataController::class, 'index']);
@@ -40,7 +39,6 @@ Route::post('/admin/jenis', [ADMIN\JenisWisataController::class, 'store']);
 Route::get('/admin/jenis/edit/{id}', [ADMIN\JenisWisataController::class, 'edit']);
 Route::put('/admin/jenis/update/{id}', [ADMIN\JenisWisataController::class, 'update']);
 Route::delete('/admin/jenis/destroy/{id}', [ADMIN\JenisWisataController::class, 'destroy']);
-
 
 // Kecamatan
 Route::get('/admin/kecamatan', [ADMIN\KecamatanController::class, 'index']);
@@ -59,31 +57,7 @@ Route::get('/generate', function () {
     $exitCode = Artisan::call('storage:link');
     return '<script>alert("Storage link has been generated.")</script> <meta http-equiv="refresh" content="0; url=/">';
 });
->>>>>>> origin/main
 
-// Database Jenis Wisata
-Route::get('/admin/jenis', [ADMIN\JenisWisataController::class, 'index']);
-Route::get('/admin/jenis/create', [ADMIN\JenisWisataController::class, 'create']);
-Route::post('/admin/jenis', [ADMIN\JenisWisataController::class, 'store']);
-Route::get('/admin/jenis/edit/{id}', [ADMIN\JenisWisataController::class, 'edit']);
-Route::put('/admin/jenis/update/{id}', [ADMIN\JenisWisataController::class, 'update']);
-Route::delete('/admin/jenis/destroy/{id}', [ADMIN\JenisWisataController::class, 'destroy']);
+Auth::routes();
 
-
-// Kecamatan
-Route::get('/admin/kecamatan', [ADMIN\KecamatanController::class, 'index']);
-Route::get('/admin/kecamatan/create', [ADMIN\KecamatanController::class, 'create']);
-Route::post('/admin/kecamatan', [ADMIN\KecamatanController::class, 'store']);
-Route::get('/admin/kecamatan/edit/{id}', [ADMIN\KecamatanController::class, 'edit']);
-Route::put('/admin/kecamatan/update/{id}', [ADMIN\KecamatanController::class, 'update']);
-Route::delete('/admin/kecamatan/destroy/{id}', [ADMIN\KecamatanController::class, 'destroy']);
-
-// Landing Page Jenis Wisata dan Kecamatan
-Route::get('/jenis_wisata', [LANDING\JenisWisataController::class, 'index']);
-Route::get('/kecamatan', [LANDING\KecamatanController::class, 'index']);
-
-Route::resource('/admin/news', ADMIN\NewsController::class);
-Route::get('/generate', function () {
-    $exitCode = Artisan::call('storage:link');
-    return '<script>alert("Storage link has been generated.")</script> <meta http-equiv="refresh" content="0; url=/">';
-});
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
