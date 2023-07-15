@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="{{ asset('assets/admin/assets/compiled/css/app-dark.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/admin/assets/compiled/css/app.css') }}" />
     <script src="{{ asset('assets/admin/assets/static/js/initTheme.js') }}"></script>
-    <link rel="stylesheet" href="{{asset('assets/admin/assets/extensions/simple-datatables/style.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/admin/assets/compiled/css/table-datatable.css')}}" />
+    <link rel="stylesheet" href="{{ asset('assets/admin/assets/extensions/simple-datatables/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/admin/assets/compiled/css/table-datatable.css') }}" />
     @stack('style')
 </head>
 
@@ -118,6 +118,19 @@
                                 <i class="bi bi-journal-check"></i>
                                 <span>Users</span>
                             </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();"
+                                class="sidebar-link">
+                                <i class="bi bi-arrow-left"></i>
+                                <span>Logout</span>
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
                         </li>
                     </ul>
                 </div>
