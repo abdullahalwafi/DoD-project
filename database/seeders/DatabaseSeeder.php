@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
             KecamatanSeeder::class,
             WisataSeeder::class,
             NewsSeeder::class,
+            UserSeeder::class,
         ]);
     }
 }
