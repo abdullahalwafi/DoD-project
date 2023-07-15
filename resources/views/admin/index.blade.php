@@ -8,6 +8,11 @@
 
     <div class="page-heading">
         <h3>Dashboard Admin</h3>
+        @if (session('success'))
+            <div class="alert alert-success">
+                {{ session('success') }}
+            </div>
+        @endif
     </div>
     <div class="page-content">
         <section class="row">
@@ -144,8 +149,8 @@
                                 <img src="{{ url('assets/admin/assets/compiled/jpg/1.jpg') }}" alt="Face 1" />
                             </div>
                             <div class="ms-3 name">
-                                <h5 class="font-bold">Admin</h5>
-                                <h6 class="text-muted mb-0">@admin</h6>
+                                <h5 class="font-bold">{{Auth::user()->name}}</h5>
+                                <h6 class="text-muted mb-0">{{Auth::user()->email}}</h6>
                             </div>
                         </div>
                     </div>

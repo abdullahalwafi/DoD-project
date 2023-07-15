@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title') - {{ config('app.name', 'Laravel') }}</title>
-    <link rel="icon" type="image/png" href="{{asset('assets/landing/img/icon/bavel.png')}}">
+    <link rel="icon" type="image/png" href="{{ asset('assets/landing/img/icon/bavel.png') }}">
 
     <!-- Meta Description -->
     <meta name="description" content="{{ config('app.name', 'Laravel') }}">
@@ -40,7 +40,21 @@
                     <li><a href="/wisata">Wisata</a></li>
                     <li><a href="/jenis_wisata">Jenis</a></li>
                     <li><a href="/kecamatan"> Kecamatan</a></li>
-                    <li><a href="/login">LOGIN</a></li>
+
+                    <li>
+                        @if (Auth::check())
+                            <a href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">Logout
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
+                        @else
+                            <a href="/login">LOGIN</a>
+                        @endif
+                    </li>
                 </ul>
             </div>
         </div>
@@ -54,10 +68,23 @@
             <li class="sidebar-list-hover"><a href="/wisata">Wisata</a></li>
             <li class="sidebar-list-hover"><a href="/jenis_wisata">JenisWisata</a></li>
             <li class="sidebar-list-hover"><a href="/kecamatan">Kecamatan</a></li>
-            <li><a class="btn btn-orange btn-round" href="/login"> Login</a></li>
+            <li>
+                @if (Auth::check())
+                    <a href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();"
+                        class="btn btn-orange btn-round">Logout
+                    </a>
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                @else
+                    <a class="btn btn-orange btn-round" href="/login">LOGIN</a>
+                @endif
+            </li>
         </ul>
     </div>
 
     <!-- Sidebar Overlay -->
     <section class="sidebar-overlay"></section>
-
