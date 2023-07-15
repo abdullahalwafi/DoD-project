@@ -16,6 +16,7 @@ class WisataSeeder extends Seeder
         Wisata::create([
             'id' => 1,
             'nama' => 'Taman Wiladatika',
+            'image' => 'wisata/Taman Wiladatika.jpg',
             'alamat' => 'Jalan Jambore Rt 03 No. 01, Kelurahan Harjamukti, Cimanggis, Depok',
             'skor_rating' => 4.5,
             'harga_tiket' => 10000,
@@ -29,6 +30,7 @@ class WisataSeeder extends Seeder
         Wisata::create([
             'id' => 2,
             'nama' => 'Situ Cilodong',
+            'image' => 'wisata/Situ Cilodong.jpg',
             'alamat' => 'Jalan Abdul Ghani, Kalibaru, Cilodong, Depok',
             'skor_rating' => 4.2,
             'harga_tiket' => 0,
@@ -42,6 +44,7 @@ class WisataSeeder extends Seeder
         Wisata::create([
             'id' => 3,
             'nama' => 'D Kandang Amazing Farm',
+            'image' => 'wisata/D Kandang Amazing Farm.jpg',
             'alamat' => 'Jalan Penarikan, Pasir Putih, Sawangan, Depok',
             'skor_rating' => 4.0,
             'harga_tiket' => 18000,
@@ -55,6 +58,7 @@ class WisataSeeder extends Seeder
         Wisata::create([
             'id' => 4,
             'nama' => 'Cagar Alam',
+            'image' => 'wisata/Cagar Alam.jpg',
             'alamat' => ' Jalan Raya Cagar Alam, Pancoran Mas, Depok',
             'skor_rating' => 4.8,
             'harga_tiket' => 0,
@@ -68,6 +72,7 @@ class WisataSeeder extends Seeder
         Wisata::create([
             'id' => 5,
             'nama' => 'Godong Ijo',
+            'image' => 'wisata/Godong Ijo.jpg',
             'alamat' => 'Jalan Cinangka Raya Nomor 60 KM 10, kelurahan Serua, Bojongsari, Depok',
             'skor_rating' => 4.3,
             'harga_tiket' => 30000,
@@ -81,6 +86,7 @@ class WisataSeeder extends Seeder
         Wisata::create([
             'id' => 6,
             'nama' => 'Taman Rekreasi Pasir Putih',
+            'image' => 'wisata/Taman Rekreasi Pasir Putih.jpg',
             'alamat' => ' Jalan Rawa Geni Rt 01 Rw 07 No. 01, Pasir Putih, Sawangan, Depok',
             'skor_rating' => 4.1,
             'harga_tiket' => 25000,
@@ -94,6 +100,7 @@ class WisataSeeder extends Seeder
         Wisata::create([
             'id' => 7,
             'nama' => 'Kolam Renang Paragon',
+            'image' => 'wisata/Kolam Renang Paragon.jpg',
             'alamat' => 'Jalan Haji Dimun, Kelurahan Sukamaju, Cilodong, Depok',
             'skor_rating' => 4.6,
             'harga_tiket' => 30000,
@@ -107,6 +114,7 @@ class WisataSeeder extends Seeder
         Wisata::create([
             'id' => 8,
             'nama' => 'Studio Alam TVRI',
+            'image' => 'wisata/Studio Alam TVRI.jpg',
             'alamat' => 'Jalan Studio Alam TVRI, Sukmajaya, Depok',
             'skor_rating' => 4.4,
             'harga_tiket' => 10000,
@@ -120,6 +128,7 @@ class WisataSeeder extends Seeder
         Wisata::create([
             'id' => 9,
             'nama' => 'Masjid Dian Al-Mahri',
+            'image' => 'wisata/Masjid Dian Al-Mahri.jpg',
             'alamat' => ' Jalan Meruyung, Desa Meruyung, Limo, Depok',
             'skor_rating' => 4.2,
             'harga_tiket' => 15000,
@@ -133,6 +142,7 @@ class WisataSeeder extends Seeder
         Wisata::create([
             'id' => 10,
             'nama' => 'Kampung 3D Depok',
+            'image' => 'wisata/Kampung 3D Depok.jpg',
             'alamat' => 'Jalan Danau Tondano Nomor 178, kelurahan Abadijaya, Sukmajaya, Depok',
             'skor_rating' => 4.7,
             'harga_tiket' => 0,
@@ -146,6 +156,7 @@ class WisataSeeder extends Seeder
         Wisata::create([
             'id' => 11,
             'nama' => 'Situ Pengasinan',
+            'image' => 'wisata/Situ Pengasinan.jpg',
             'alamat' => 'Kelurahan Pengasinan, Sawangan, Depok',
             'skor_rating' => 4.7,
             'harga_tiket' => 0,
@@ -159,6 +170,7 @@ class WisataSeeder extends Seeder
         Wisata::create([
             'id' => 12,
             'nama' => 'Saladin Square',
+            'image' => 'wisata/Saladin Square.jpg',
             'alamat' => ' Jalan Margonda Raya 37-79, Pancoran Mas, Depok',
             'skor_rating' => 4.7,
             'harga_tiket' => 5000,
@@ -172,6 +184,7 @@ class WisataSeeder extends Seeder
         Wisata::create([
             'id' => 13,
             'nama' => 'Margo City Depok',
+            'image' => 'wisata/Margo City Depok.jpg',
             'alamat' => ' Jl. Margonda No.358, Kemiri Muka, Kecamatan Beji, Kota Depok',
             'skor_rating' => 4.7,
             'harga_tiket' => 0,

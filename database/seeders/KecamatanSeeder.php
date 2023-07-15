@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\Wisata;
+use App\Models\Kecamatan;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
