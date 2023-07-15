@@ -76,7 +76,7 @@
         <div class="section-discover-body slides">
             @foreach ($jeniswisata as $item)
                 <div class="col">
-                    <a href="culture.html">
+                    <a href="/jenis_wisata/{{$item->id}}">
                         <img
                             src="https://img.freepik.com/free-vector/film-design-concept_1284-13882.jpg?w=740&t=st=1688974282~exp=1688974882~hmac=b37b2a9a20c89db78a41d0e95f8ad13c89edd3f8687cd6b24452835e7a430dc2">
                         <div class="caption" alt="Culture">

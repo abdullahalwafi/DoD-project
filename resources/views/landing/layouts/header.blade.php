@@ -40,6 +40,7 @@
                     <li><a href="/wisata">Wisata</a></li>
                     <li><a href="/jenis_wisata">Jenis</a></li>
                     <li><a href="/kecamatan"> Kecamatan</a></li>
+                    <li><a href="/news"> News</a></li>
 
                     <li>
                         @if (Auth::check())
@@ -68,6 +69,7 @@
             <li class="sidebar-list-hover"><a href="/wisata">Wisata</a></li>
             <li class="sidebar-list-hover"><a href="/jenis_wisata">JenisWisata</a></li>
             <li class="sidebar-list-hover"><a href="/kecamatan">Kecamatan</a></li>
+            <li class="sidebar-list-hover"><a href="/news">News</a></li>
             <li>
                 @if (Auth::check())
                     <a href="{{ route('logout') }}"

@@ -63,3 +63,6 @@ Route::get('/generate', function () {
 });
 
 Auth::routes();
+
+Route::get('/news', [LANDING\NewsController::class, 'index']);
+Route::get('/news/{slug}', [LANDING\NewsController::class, 'show']);
