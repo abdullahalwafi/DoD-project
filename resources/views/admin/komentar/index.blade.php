@@ -49,7 +49,7 @@
                                     <td>{{ $k->isi }}</td>
                                     <td>{{ $k->rating }}</td>
                                     <td>{{ $k->wisata->nama }}</td>
-                                    <td>{{ $k->users->name }}</td>
+                                    <td>{{ $k->user->name }}</td>
                                     <td>
                                         <form action="{{ url('/admin/komentar/destroy', $k->id) }}" method="post"
                                             class="d-inline">

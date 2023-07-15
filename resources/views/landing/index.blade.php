@@ -153,19 +153,19 @@
             <div class="row">
                 @foreach ($randomwisata1 as $item)
                     <div class="col-1 slides">
-                        <img src="{{ $item->wisata }}">
+                        <img src="/storage/{{ $item->image }}">
                         <div class="overlay">
                             <div class="caption">
                                 <div class="caption-text">
-                                    <p>Kuta Beach</p>
+                                    <p>{{ $item->nama }}</p>
                                     <span class="ion-ios-star checked"></span>
                                     <span class="ion-ios-star checked"></span>
                                     <span class="ion-ios-star checked"></span>
                                     <span class="ion-ios-star"></span>
                                     <span class="ion-ios-star"></span> <br>
                                     <span class="ion-bag big"></span> &nbsp;
-                                    <b>Rp. 15.000</b>
-                                    <a href="single-destination.html" class="btn btn-orange btn-round right">See
+                                    <b>Rp. {{ number_format($item->harga_tiket, 0, ',', '.') }}</b>
+                                    <a href="/wisata/show/{{ $item->id }}" class="btn btn-orange btn-round right">See
                                         Details</a>
                                 </div>
                             </div>
@@ -174,60 +174,27 @@
                 @endforeach
             </div>
             <div class="row">
-                <div class="col-2 slides">
-                    <img src="{{ asset('assets/landing/img/tanah-lot.jpeg') }}">
-                    <div class="overlay">
-                        <div class="caption">
-                            <div class="caption-text">
-                                <p>Tanah Lot</p>
-                                <span class="ion-ios-star checked"></span>
-                                <span class="ion-ios-star checked"></span>
-                                <span class="ion-ios-star checked"></span>
-                                <span class="ion-ios-star checked"></span>
-                                <span class="ion-ios-star"></span> <br>
-                                <span class="ion-bag big"></span> &nbsp;
-                                <b>Rp. 15.000 - Rp. 60.000</b> <br>
-                                <a href="single-destination.html" class="btn btn-orange btn-round">See Details</a>
+                @foreach ($randomwisata2 as $item)
+                    <div class="col-2 slides">
+                        <img src="/storage/{{ $item->image }}">
+                        <div class="overlay">
+                            <div class="caption">
+                                <div class="caption-text">
+                                    <p>{{ $item->nama }}</p>
+                                    <span class="ion-ios-star checked"></span>
+                                    <span class="ion-ios-star checked"></span>
+                                    <span class="ion-ios-star checked"></span>
+                                    <span class="ion-ios-star"></span>
+                                    <span class="ion-ios-star"></span> <br>
+                                    <span class="ion-bag big"></span> &nbsp;
+                                    <b>Rp. {{ number_format($item->harga_tiket, 0, ',', '.') }}</b>
+                                    <a href="/wisata/show/{{ $item->id }}" class="btn btn-orange btn-round right">See
+                                        Details</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-2 slides">
-                    <img src="{{ asset('assets/landing/img/depok-bird-park.jpg') }}">
-                    <div class="overlay">
-                        <div class="caption">
-                            <div class="caption-text">
-                                <p>Depok Bird Park</p>
-                                <span class="ion-ios-star checked"></span>
-                                <span class="ion-ios-star checked"></span>
-                                <span class="ion-ios-star checked"></span>
-                                <span class="ion-ios-star"></span>
-                                <span class="ion-ios-star"></span> <br>
-                                <span class="ion-bag big"></span> &nbsp;
-                                <b>Rp. 75.000 - Rp. 150.000</b> <br>
-                                <a href="single-destination.html" class="btn btn-orange btn-round">See Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2 slides">
-                    <img src="{{ asset('assets/landing/img/gunung.jpg') }}">
-                    <div class="overlay">
-                        <div class="caption">
-                            <div class="caption-text">
-                                <p>Mount Batur</p>
-                                <span class="ion-ios-star checked"></span>
-                                <span class="ion-ios-star checked"></span>
-                                <span class="ion-ios-star checked"></span>
-                                <span class="ion-ios-star"></span>
-                                <span class="ion-ios-star"></span> <br>
-                                <span class="ion-bag big"></span> &nbsp;
-                                <b>Rp. 10.000</b> <br>
-                                <a href="single-destination.html" class="btn btn-orange btn-round">See Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
@@ -241,44 +208,17 @@
             </div>
             <div id='mySwipe' class='swipe'>
                 <div class="swipe-wrap">
-                    <div class="blockquote">
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. </p>
-                        <div class="blockquote-user">
-                            <div class="blockquote-avatar">
-                                <img src="{{ asset('assets/landing/img/faces/clem-onojeghuo-2.jpg') }}"
-                                    alt="Bae Hyo-Rin">
+                    @foreach ($tigakomentar as $item)
+                        <div class="blockquote">
+                            <p class="text">{{ $item->isi }}</p>
+                            <div class="blockquote-user">
+                                <div class="blockquote-avatar">
+                                    <img src="{{ url('assets/admin/assets/compiled/jpg/4.jpg') }}" alt="Bae Hyo-Rin">
+                                </div>
+                                <div class="blockquote-name">{{ $item->user->name }}</div>
                             </div>
-                            <div class="blockquote-name">John Doe</div>
                         </div>
-                    </div>
-                    <div class="blockquote">
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. </p>
-                        <div class="blockquote-user">
-                            <div class="blockquote-avatar">
-                                <img src="{{ asset('assets/landing/img/faces/joe-gardner-2.jpg') }}" alt="Bae Hyo-Rin">
-                            </div>
-                            <div class="blockquote-name">Jane Doe</div>
-                        </div>
-                    </div>
-                    <div class="blockquote">
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. </p>
-                        <div class="blockquote-user">
-                            <div class="blockquote-avatar">
-                                <img src="{{ asset('assets/landing/img/faces/clem-onojeghuo-3.jpg') }}"
-                                    alt="Bae Hyo-Rin">
-                            </div>
-                            <div class="blockquote-name">John Roe</div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
             <div class="overlay-btn">
@@ -299,33 +239,19 @@
         </div>
         <div class="section-news-body">
             <div class="row slides">
-                <div class="col">
-                    <img src="{{ asset('assets/landing/img/news/039443100_1523457714-IMG-20180411-WA0038.jpg') }}">
-                    <div class="overlay">
-                        <a href="single-news.html">
-                            <p class="text-top"> 10 Ribu Sepeda Tua dari 30 Negara Kumpul di Depok</p>
-                        </a>
-                        <p class="text-bottom">20 April 2018</p>
+                @foreach ($newsterbaru as $item)
+                    <div class="col">
+                        <a href="/news/{{ $item->slug }}">
+                            <img src="/storage/{{ $item->image }}">
+                            <div class="overlay">
+                                <a href="/news/{{ $item->slug }}">
+                                    <p class="text-top"> {{ $item->title }}</p>
+                                </a>
+                                <p class="text-bottom">{{ date('d F Y', strtotime($item->created_at)) }}</p>
+                            </div>
+                        </a>    
                     </div>
-                </div>
-                <div class="col-2">
-                    <img src="{{ asset('assets/landing/img/news/038321800_1523380452-IMG-20180410-WA0031.jpg') }}">
-                    <div class="overlay">
-                        <a href="single-news.html">
-                            <p class="text-top">Keistimewaan Depok di Mata Dubes Mesir</p>
-                        </a>
-                        <p class="text-bottom">20 April 2018</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <img src="{{ asset('assets/landing/img/news/023053600_1523534851-IMG-20180412-WA0034.jpg') }}">
-                    <div class="overlay">
-                        <a href="single-news.html">
-                            <p class="text-top">Aksi Polres Badung Tangkal Hoaks</p>
-                        </a>
-                        <p class="text-bottom">20 April 2018</p>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>

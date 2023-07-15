@@ -120,7 +120,7 @@
                                         <tbody>
                                             @foreach ($lastkomentar as $item)
                                                 <tr>
-                                                    <td class="col-3">{{ $item->users->name }}</td>
+                                                    <td class="col-3">{{ $item->user->name }}</td>
                                                     <td class="col-auto">
                                                         <p class="mb-0">
                                                             {{ $item->isi }}
@@ -149,7 +149,7 @@
                                 <img src="{{ url('assets/admin/assets/compiled/jpg/1.jpg') }}" alt="Face 1" />
                             </div>
                             <div class="ms-3 name">
-                                <h5 class="font-bold">{{Auth::user()->name}}</h5>
+                                <h5 class="font-bold">{{ Auth::user()->name }}</h5>
                                 <h6 class="text-muted mb-0">@admin</h6>
                             </div>
                         </div>
@@ -161,18 +161,17 @@
                     </div>
                     <div class="card-content pb-4">
                         @foreach ($lastkomentar as $komentar)
-                            @foreach ($komentar->users as $item)
-                                <div class="recent-message d-flex px-4 py-3">
-                                    <div class="avatar avatar-lg">
-                                        <img src="{{ url('assets/admin/assets/compiled/jpg/4.jpg') }}" />
-                                    </div>
-                                    <div class="name ms-4">
-                                        <h5 class="mb-1">{{ $item->name }}</h5>
-                                        <h6 class="text-muted mb-0">{{ strtolower(str_replace(' ', '', $item->name)) }}
-                                        </h6>
-                                    </div>
+                            <div class="recent-message d-flex px-4 py-3">
+                                <div class="avatar avatar-lg">
+                                    <img src="{{ url('assets/admin/assets/compiled/jpg/4.jpg') }}" />
                                 </div>
-                            @endforeach
+                                <div class="name ms-4">
+                                    <h5 class="mb-1">{{ $komentar->user->name }}</h5>
+                                    <h6 class="text-muted mb-0">
+                                        {{ strtolower(str_replace(' ', '', $komentar->user->name)) }}
+                                    </h6>
+                                </div>
+                            </div>
                         @endforeach
                     </div>
                 </div>
