@@ -36,7 +36,8 @@
                             <h4 class="card-title">Edit Data</h4>
                         </div>
                         <div class="card-body">
-                            <form class="form" method="post" action="{{ url('/admin/wisata/update', $wisata->id) }}">
+                            <form class="form" method="post" action="{{ url('/admin/wisata/update', $wisata->id) }}"
+                                enctype="multipart/form-data">
                                 @csrf
                                 @method('put')
                                 <div class="row">
@@ -82,7 +83,7 @@
                                         <div class="form-group">
                                             <label for="kecamatan_id" class="form-label">Kecamatan</label>
                                             <select id="kecamatan_id" name="kecamatan_id" class="form-control">
-                                                <option value="">Pilih Jenis Wisata</option>
+                                                <option value="">Pilih Kecamatan</option>
                                                 @foreach ($kecamatan as $kec)
                                                     <option value="{{ $kec->id }}"
                                                         {{ $wisata->kecamatan_id == $kec->id ? 'selected' : '' }}>
@@ -115,6 +116,12 @@
                                                 <span class="text-danger">{{ $errors->first('harga_tiket') }}</span>
                                             @endif
                                         </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="image">Image</label>
+                                        <input type="file" id="image" class="form-control" name="image"
+                                            accept="image/*">
                                     </div>
                                     <div class="col-12">
                                         <div class="form-group">

@@ -39,10 +39,12 @@ class WisataController extends Controller
             'alamat' => 'required',
             'skor_rating' => 'required|integer',
             'harga_tiket' => 'required|integer',
+            'image' => 'required',
             'deskripsi' => 'required',
             'jenis_wisata_id' => 'required',
             'kecamatan_id' => 'required',
         ]);
+        $valited['image'] = $request->file('image')->store('wisata', 'public');
         Wisata::create($valited);
         return redirect('/admin/wisata')->with('success', 'Data berhasil ditambahkan');
     }
@@ -68,10 +70,18 @@ class WisataController extends Controller
             'alamat' => 'required',
             'skor_rating' => 'required|integer',
             'harga_tiket' => 'required|integer',
+            'image' => 'required',
             'deskripsi' => 'required',
             'jenis_wisata_id' => 'required',
             'kecamatan_id' => 'required',
         ]);
+
+        if (!$request->file('image')) {
+            $valited['image'] = Wisata::findOrFail($id)->image;
+        } else {
+            // upload img
+            $valited['image'] = $request->file('image')->store('wisata', 'public');
+        }
         $wisata = Wisata::find($id);
         $wisata->update($valited);
         return redirect('/admin/wisata')->with('success', 'Data berhasil diedit');
@@ -82,7 +92,9 @@ class WisataController extends Controller
      */
     public function destroy(string $id)
     {
-        Wisata::destroy($id);
+        $wisata = Wisata::findOrFail($id);
+        unlink(storage_path('app/public/' . $wisata->image));
+        $wisata->delete();
         return redirect('/admin/wisata')->with('success', 'Data berhasil dihapus');
     }
 }

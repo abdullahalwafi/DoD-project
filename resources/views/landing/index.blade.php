@@ -74,54 +74,18 @@
                 dapat anda jelajahi</p>
         </div>
         <div class="section-discover-body slides">
-            <div class="col">
-                <a href="destination.html">
-                    <img src="{{ asset('assets/landing/img/selfie.jpg') }}" alt="Destination">
-                    <div class="caption">
-                        <p>DESTINATION</p>
-                        <div class="line"></div>
-                        <div class="caption-text">
-                            <p>Kunjungi destinasi wisata yang belum pernah anda temui sebelumnya</p>
+            @foreach ($jeniswisata as $item)
+                <div class="col">
+                    <a href="culture.html">
+                        <img
+                            src="https://img.freepik.com/free-vector/film-design-concept_1284-13882.jpg?w=740&t=st=1688974282~exp=1688974882~hmac=b37b2a9a20c89db78a41d0e95f8ad13c89edd3f8687cd6b24452835e7a430dc2">
+                        <div class="caption" alt="Culture">
+                            <p>{{ $item->nama }}</p>
+                            <div class="line"></div>
                         </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="culture.html">
-                    <img src="https://img.freepik.com/free-vector/film-design-concept_1284-13882.jpg?w=740&t=st=1688974282~exp=1688974882~hmac=b37b2a9a20c89db78a41d0e95f8ad13c89edd3f8687cd6b24452835e7a430dc2">
-                    <div class="caption" alt="Culture">
-                        <p>CULTURE</p>
-                        <div class="line"></div>
-                        <div class="caption-text">
-                            <p>Selain pemandangan yang indah depok juga memiliki budaya yang mengesankan</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="event.html">
-                    <img src="https://img.freepik.com/free-vector/film-design-concept_1284-13882.jpg?w=740&t=st=1688974282~exp=1688974882~hmac=b37b2a9a20c89db78a41d0e95f8ad13c89edd3f8687cd6b24452835e7a430dc2">
-                    <div class="caption" alt="Event">
-                        <p>EVENT</p>
-                        <div class="line"></div>
-                        <div class="caption-text">
-                            <p>Ikuti dan ketahui event - event menarik yang berlangsung di Depok</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="stay.html">
-                    <img src="https://img.freepik.com/free-vector/film-design-concept_1284-13882.jpg?w=740&t=st=1688974282~exp=1688974882~hmac=b37b2a9a20c89db78a41d0e95f8ad13c89edd3f8687cd6b24452835e7a430dc2">
-                    <div class="caption" alt="Stay">
-                        <p>WHERE TO STAY</p>
-                        <div class="line"></div>
-                        <div class="caption-text">
-                            <p>Temukan tempat penginapan terbaik dengan harga yang relatif murah</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
+                    </a>
+                </div>
+            @endforeach
         </div>
     </section>
 
@@ -136,8 +100,7 @@
         <div class="section-gallery-body">
             <div class="row">
                 <div class="col-video">
-                    <iframe src="https://www.youtube.com/embed/WNTqtWu3is8"
-                        title="YouTube video player" frameborder="0"
+                    <iframe src="https://www.youtube.com/embed/WNTqtWu3is8" title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                 </div>
@@ -188,44 +151,27 @@
         </div>
         <div class="section-tour-body">
             <div class="row">
-                <div class="col-1 slides">
-                    <img src="{{ asset('assets/landing/img/pantai-kuta.jpg') }}">
-                    <div class="overlay">
-                        <div class="caption">
-                            <div class="caption-text">
-                                <p>Kuta Beach</p>
-                                <span class="ion-ios-star checked"></span>
-                                <span class="ion-ios-star checked"></span>
-                                <span class="ion-ios-star checked"></span>
-                                <span class="ion-ios-star"></span>
-                                <span class="ion-ios-star"></span> <br>
-                                <span class="ion-bag big"></span> &nbsp;
-                                <b>Rp. 15.000</b>
-                                <a href="single-destination.html" class="btn btn-orange btn-round right">See
-                                    Details</a>
+                @foreach ($randomwisata1 as $item)
+                    <div class="col-1 slides">
+                        <img src="{{ $item->wisata }}">
+                        <div class="overlay">
+                            <div class="caption">
+                                <div class="caption-text">
+                                    <p>Kuta Beach</p>
+                                    <span class="ion-ios-star checked"></span>
+                                    <span class="ion-ios-star checked"></span>
+                                    <span class="ion-ios-star checked"></span>
+                                    <span class="ion-ios-star"></span>
+                                    <span class="ion-ios-star"></span> <br>
+                                    <span class="ion-bag big"></span> &nbsp;
+                                    <b>Rp. 15.000</b>
+                                    <a href="single-destination.html" class="btn btn-orange btn-round right">See
+                                        Details</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-1 slides">
-                    <img src="{{ asset('assets/landing/img/temple.jpg') }}">
-                    <div class="overlay">
-                        <div class="caption">
-                            <div class="caption-text">
-                                <p>Pure Ulun Danu Bratan</p>
-                                <span class="ion-ios-star checked"></span>
-                                <span class="ion-ios-star checked"></span>
-                                <span class="ion-ios-star checked"></span>
-                                <span class="ion-ios-star"></span>
-                                <span class="ion-ios-star"></span> <br>
-                                <span class="ion-bag big"></span> &nbsp;
-                                <b>Rp. 15.000</b>
-                                <a href="" class="btn btn-orange btn-round right">See
-                                    Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
             <div class="row">
                 <div class="col-2 slides">

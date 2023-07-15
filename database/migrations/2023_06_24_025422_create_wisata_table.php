@@ -17,7 +17,8 @@ return new class extends Migration
             $table->string('alamat');
             $table->integer('skor_rating');
             $table->integer('harga_tiket');
-            $table->string('deskripsi');
+            $table->string('image');
+            $table->text('deskripsi');
             $table->unsignedInteger('jenis_wisata_id');
             $table->unsignedInteger('kecamatan_id');
             $table->foreign('jenis_wisata_id')->references('id')->on('jenis_wisata');

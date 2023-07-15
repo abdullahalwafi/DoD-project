@@ -37,7 +37,8 @@
                             <h4 class="card-title">Tambah Data</h4>
                         </div>
                         <div class="card-body">
-                            <form class="form" method="post" action="{{ url('/admin/wisata/store') }}">
+                            <form class="form" method="post" action="{{ url('/admin/wisata/store') }}"
+                                enctype="multipart/form-data">
                                 @csrf
                                 <div class="row">
                                     <div class="col-md-6 col-12">
@@ -81,7 +82,7 @@
                                         <div class="form-group">
                                             <label for="kecamatan_id" class="form-label">Kecamatan</label>
                                             <select id="kecamatan_id" name="kecamatan_id" class="form-control">
-                                                <option value="">Pilih Jenis Wisata</option>
+                                                <option value="">Pilih Kecamatan</option>
                                                 @foreach ($kecamatan as $kec)
                                                     <option value="{{ $kec->id }}"
                                                         {{ old('kecamatan_id') == $kec->id ? 'selected' : '' }}>
@@ -115,10 +116,16 @@
                                             @endif
                                         </div>
                                     </div>
+                                    <div class="form-group">
+                                        <label for="image">Image</label>
+                                        <input type="file" id="image" class="form-control" name="image"
+                                            accept="image/*" required>
+                                    </div>
                                     <div class="col-12">
                                         <div class="form-group">
                                             <label for="deskripsi" class="form-label">Deskripsi</label>
-                                            <textarea id="deskripsi" name="deskripsi" value="{{ old('deskripsi') }}" class="form-control" placeholder="Deskripsi">{{ old('deskripsi') }}</textarea>
+                                            <textarea id="deskripsi" name="deskripsi" value="{{ old('deskripsi') }}" class="form-control"
+                                                placeholder="Deskripsi">{{ old('deskripsi') }}</textarea>
                                             @if ($errors->has('deskripsi'))
                                                 <span class="text-danger">{{ $errors->first('deskripsi') }}</span>
                                             @endif
