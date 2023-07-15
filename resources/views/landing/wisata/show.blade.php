@@ -59,48 +59,51 @@
                     <span class="ion-ios-bookmarks"></span>&nbsp; Komentar
                 </div>
                 <div style="margin: 5px">
-                    <form method="post" action="{{ url('komentar/store') }}">
-                        @csrf
-                        <div class="form-group ">
-                            <label for="tanggal" class="col-form-label">Tanggal</label>
-                            <div class="input-group">
-                                <input id="tanggal" name="tanggal" type="text" class="form-control" readonly
-                                    value="{{ date('Y-m-d') }}">
-                                <input id="wisata_id" name="wisata_id" type="hidden"value="{{ $wisata->id }}">
+                    @if (Auth::check())
+                        <form method="post" action="{{ url('komentar/store') }}">
+                            @csrf
+                            <div class="form-group ">
+                                <label for="tanggal" class="col-form-label">Tanggal</label>
+                                <div class="input-group">
+                                    <input id="tanggal" name="tanggal" type="text" class="form-control" readonly
+                                        value="{{ date('Y-m-d') }}">
+                                    <input id="wisata_id" name="wisata_id" type="hidden"value="{{ $wisata->id }}">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group ">
-                            <label for="user_id" class="col-form-label">User</label>
-                            <div class="input-group">
-                                <select id="user_id" name="user_id" class="form-control" required>
-                                    @foreach ($users as $user)
-                                        <option value="{{ $user->id }}">{{ $user->name }}</option>
-                                    @endforeach
-                                </select>
+                            <div class="form-group ">
+                                <label for="user_id" class="col-form-label">User</label>
+                                <div class="input-group">
+                                    <input id="user_id" name="user_id" type="hidden" class="form-control" readonly
+                                        value="{{ Auth::user()->id }}">
+                                    <input type="text" class="form-control" readonly value="{{ Auth::user()->name }}">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group ">
-                            <label for="rating" class="col-form-label">Rating</label>
-                            <div class="input-group">
-                                <input id="rating" name="rating" type="number" class="form-control" required
-                                    placeholder="1-5">
+                            <div class="form-group ">
+                                <label for="rating" class="col-form-label">Rating</label>
+                                <div class="input-group">
+                                    <input id="rating" name="rating" type="number" class="form-control" required
+                                        placeholder="1-5">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group ">
-                            <label for="isi" class="col-form-label">Isi</label>
-                            <div class="input-group">
-                                <input id="isi" name="isi" type="text" class="form-control" required
-                                    placeholder="isi komentar">
+                            <div class="form-group ">
+                                <label for="isi" class="col-form-label">Isi</label>
+                                <div class="input-group">
+                                    <input id="isi" name="isi" type="text" class="form-control" required
+                                        placeholder="isi komentar">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group ">
-                            <div class="offset-4">
-                                <button name="submit" type="submit" class="btn"
-                                    style="background: blue; color: white; border-radius:25px; margin-top:20px">Submit</button>
+                            <div class="form-group ">
+                                <div class="offset-4">
+                                    <button name="submit" type="submit" class="btn"
+                                        style="background: blue; color: white; border-radius:25px; margin-top:20px">Submit</button>
+                                </div>
                             </div>
+                        </form>
+                    @else
+                        <div class="alert alert-danger" role="alert">
+                            Silahkan <a href="{{ url('login') }}">Login</a> untuk memberikan komentar
                         </div>
-                    </form>
-
+                    @endif
                 </div>
             </div>
             <div class="panel">
@@ -111,8 +114,8 @@
                     @foreach ($komentar as $kom)
                         <fieldset style="width: 100%; border-radius: 10px; margin-bottom: 20px">
                             <legend>{{ $kom->users->name }}</legend>
-                            <small>Tanggal : {{$kom->tanggal}}</small><br>
-                            <small>Rating : {{$kom->rating}}</small><br>
+                            <small>Tanggal : {{ $kom->tanggal }}</small><br>
+                            <small>Rating : {{ $kom->rating }}</small><br>
                             {{ $kom->isi }}
                         </fieldset>
                     @endforeach

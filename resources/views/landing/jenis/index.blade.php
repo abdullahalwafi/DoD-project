@@ -1,74 +1,5 @@
 @extends('landing.layouts.app')
 @section('content')
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Destination - Bali Travel Time</title>
-        <link rel="icon" type="image/png" href="img/icon/bavel.png">
-
-        <!-- Meta Description -->
-        <meta name="description" content="Bali Travel Time">
-        <meta name="keywords" content="Travel, Bali, Tourism">
-        <meta name="robots" content="index, nofollow">
-        <meta name="web_author" content="Yogi Prasertawan">
-        <meta name="language" content="Indonesian">
-
-        <!-- Import Icon -->
-        <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
-
-        <!-- Import Style -->
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/swipe.min.css">
-
-    </head>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <ul class="sidebar-list">
-            <li><a href="" class="close"><span class="ion-android-close"></span></a></li>
-            <li class="sidebar-list-hover"><a href="/">Home</a></li>
-            <li class="sidebar-list-hover"><a href="destination.html">Destination</a></li>
-            <li class="sidebar-list-hover"><a href="gallery.html">Gallery</a></li>
-            <li class="sidebar-list-hover"><a href="/#discover">Discover</a></li>
-            <li class="sidebar-list-hover"><a href="news.html"> News</a></li>
-            <li><a class="btn btn-orange btn-round" href="login.html"> Login</a></li>
-        </ul>
-    </div>
-
-    <!-- Sidebar Overlay -->
-    <section class="sidebar-overlay"></section>
-
-    <!-- Login Form -->
-
-    <div class="login-form">
-        <div class="login-top">
-            <span class="close">&times;</span>
-        </div>
-        <div class="login">
-            <h3 class="text-center">
-                Bavel Log In
-            </h3>
-            <div class="form-input">
-                <label>Email</label> <br>
-                <input type="email" name="" class="form-control">
-            </div>
-            <div class="form-input">
-                <label>Password</label> <br>
-                <input type="password" name="" class="form-control">
-            </div>
-            <div class="form-input">
-                <button type="submit" class="btn btn-login">Log In</button>
-            </div>
-            <a href="" class="text-center">Not have account ? Register now </a>
-        </div>
-    </div>
-
-    <div class="login-overlay"></div>
-
     <section class="section-header-single">
         <img src="{{ asset('assets/landing/img/jenis/1.png') }}">
         <div class="overlay">
@@ -78,7 +9,6 @@
                 <span class="ion-record"></span>&nbsp;
                 <span class="ion-record"></span>
             </div>
-    </section>
     </section>
 
     <ul class="breadcrumb">
@@ -109,7 +39,7 @@
                         <div class="caption">
                             <div class="caption-text">
                                 <p>Wisata Alam</p>
-                                <a href="single-destination.html" class="btn btn-orange btn-round">See Details</a>
+                                <a href="/wisata" class="btn btn-orange btn-round">See Details</a>
                             </div>
                         </div>
                     </div>
@@ -121,7 +51,7 @@
                         <div class="caption">
                             <div class="caption-text">
                                 <p>Wisata Belanja</p>
-                                <a href="single-destination.html" class="btn btn-orange btn-round">See Details</a>
+                                <a href="/wisata" class="btn btn-orange btn-round">See Details</a>
                             </div>
                         </div>
                     </div>
@@ -133,7 +63,7 @@
                         <div class="caption">
                             <div class="caption-text">
                                 <p>Wisata Budaya dan Sejarah</p>
-                                <a href="single-destination.html" class="btn btn-orange btn-round">See Details</a>
+                                <a href="/wisata" class="btn btn-orange btn-round">See Details</a>
                             </div>
                         </div>
                     </div>
@@ -145,7 +75,7 @@
                         <div class="caption">
                             <div class="caption-text">
                                 <p>Wisata Perburuan dan Safari</p>
-                                <a href="single-destination.html" class="btn btn-orange btn-round">See Details</a>
+                                <a href="/wisata" class="btn btn-orange btn-round">See Details</a>
                             </div>
                         </div>
                     </div>
@@ -157,7 +87,7 @@
                         <div class="caption">
                             <div class="caption-text">
                                 <p>Wisata Kuliner</p>
-                                <a href="single-destination.html" class="btn btn-orange btn-round">See Details</a>
+                                <a href="/wisata" class="btn btn-orange btn-round">See Details</a>
                             </div>
                         </div>
                     </div>
@@ -169,7 +99,7 @@
                         <div class="caption">
                             <div class="caption-text">
                                 <p>Wisata Pendidikan</p>
-                                <a href="single-destination.html" class="btn btn-orange btn-round">See Details</a>
+                                <a href="/wisata" class="btn btn-orange btn-round">See Details</a>
                             </div>
                         </div>
                     </div>
@@ -181,7 +111,7 @@
                         <div class="caption">
                             <div class="caption-text">
                                 <p>Wisata Petualangan</p>
-                                <a href="single-destination.html" class="btn btn-orange btn-round">See Details</a>
+                                <a href="/wisata" class="btn btn-orange btn-round">See Details</a>
                             </div>
                         </div>
                     </div>
@@ -193,7 +123,7 @@
                         <div class="caption">
                             <div class="caption-text">
                                 <p>Wisata Religi</p>
-                                <a href="single-destination.html" class="btn btn-orange btn-round">See Details</a>
+                                <a href="/wisata" class="btn btn-orange btn-round">See Details</a>
                             </div>
                         </div>
                     </div>
@@ -201,11 +131,4 @@
 
             </div>
     </section>
-
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/swipe.js"></script>
-    </body>
-
-    </html>
 @endsection

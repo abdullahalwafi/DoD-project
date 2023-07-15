@@ -66,3 +66,5 @@ Auth::routes();
 
 Route::get('/news', [LANDING\NewsController::class, 'index']);
 Route::get('/news/{slug}', [LANDING\NewsController::class, 'show']);
+Route::get('/jenis_wisata/{$id}', [LANDING\JenisWisataController::class, 'show']);
+Route::get('/kecamatan/{$id}', [LANDING\KecamatanController::class, 'show']);

@@ -1,79 +1,10 @@
 @extends('landing.layouts.app')
 @section('content')
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Destination - Bali Travel Time</title>
-        <link rel="icon" type="image/png" href="img/icon/bavel.png">
-
-        <!-- Meta Description -->
-        <meta name="description" content="Bali Travel Time">
-        <meta name="keywords" content="Travel, Bali, Tourism">
-        <meta name="robots" content="index, nofollow">
-        <meta name="web_author" content="Yogi Prasertawan">
-        <meta name="language" content="Indonesian">
-
-        <!-- Import Icon -->
-        <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
-
-        <!-- Import Style -->
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/swipe.min.css">
-
-        {{--  css  --}}
-        <style type="text/css">
-            p {
-                text-align: justify;
-            }
-        </style>
-
-    </head>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <ul class="sidebar-list">
-            <li><a href="" class="close"><span class="ion-android-close"></span></a></li>
-            <li class="sidebar-list-hover"><a href="/">Home</a></li>
-            <li class="sidebar-list-hover"><a href="destination.html">Destination</a></li>
-            <li class="sidebar-list-hover"><a href="gallery.html">Gallery</a></li>
-            <li class="sidebar-list-hover"><a href="/#discover">Discover</a></li>
-            <li class="sidebar-list-hover"><a href="news.html"> News</a></li>
-            <li><a class="btn btn-orange btn-round" href="login.html"> Login</a></li>
-        </ul>
-    </div>
-
-    <!-- Sidebar Overlay -->
-    <section class="sidebar-overlay"></section>
-
-    <!-- Login Form -->
-
-    <div class="login-form">
-        <div class="login-top">
-            <span class="close">&times;</span>
-        </div>
-        <div class="login">
-            <h3 class="text-center">
-                Bavel Log In
-            </h3>
-            <div class="form-input">
-                <label>Email</label> <br>
-                <input type="email" name="" class="form-control">
-            </div>
-            <div class="form-input">
-                <label>Password</label> <br>
-                <input type="password" name="" class="form-control">
-            </div>
-            <div class="form-input">
-                <button type="submit" class="btn btn-login">Log In</button>
-            </div>
-            <a href="" class="text-center">Not have account ? Register now </a>
-        </div>
-    </div>
-
+    <style type="text/css">
+        p {
+            text-align: justify;
+        }
+    </style>
     <div class="login-overlay"></div>
 
     <section class="section-header-single">
@@ -119,7 +50,7 @@
                                 </div>
                                 <div class="content-desc">
                                     <div class="content-desc-title">
-                                        <a href="!">
+                                        <a href="/wisata">
                                             <h3>Kecamatan Beji</h3>
                                         </a>
                                     </div>
@@ -134,7 +65,7 @@
                                             kereta diantaranya Stasiun Pondok Cina dan Stasiun Universitas Indonesia.
                                             <a href="https://id.wikipedia.org/wiki/Beji,_Depok">Wikipedia</a>
                                         </p>
-                                        <a href="!" class="btn btn-md btn-orange" style="margin-top: 10px;">Read
+                                        <a href="/wisata" class="btn btn-md btn-orange" style="margin-top: 10px;">Read
                                             More</a>
                                     </div>
                                 </div>
@@ -145,7 +76,7 @@
                                 </div>
                                 <div class="content-desc">
                                     <div class="content-desc-title">
-                                        <a href="!">
+                                        <a href="/wisata">
                                             <h3>Kecamatan Bojongsari</h3>
                                         </a>
                                     </div>
@@ -157,7 +88,7 @@
                                             Bojongsari adalah sebuah kecamatan yang terletak di Kota Depok, Jawa Barat.
                                             <a href="https://id.wikipedia.org/wiki/Bojongsari,_Depok">Wikipedia</a>
                                         </p>
-                                        <a href="!" class="btn btn-md btn-orange" style="margin-top: 10px;">Read
+                                        <a href="/wisata" class="btn btn-md btn-orange" style="margin-top: 10px;">Read
                                             More</a>
                                     </div>
                                 </div>
@@ -168,7 +99,7 @@
                                 </div>
                                 <div class="content-desc">
                                     <div class="content-desc-title">
-                                        <a href="!">
+                                        <a href="/wisata">
                                             <h3>Kecamatan Cilodong</h3>
                                         </a>
                                     </div>
@@ -182,7 +113,7 @@
                                             Terminal Kampung Sawah dan Stasiun Pondok Rajeg.
                                             <a href="https://id.wikipedia.org/wiki/Cilodong,_Depok">Wikipedia</a>
                                         </p>
-                                        <a href="!" class="btn btn-md btn-orange" style="margin-top: 10px;">Read
+                                        <a href="/wisata" class="btn btn-md btn-orange" style="margin-top: 10px;">Read
                                             More</a>
                                     </div>
                                 </div>
@@ -193,7 +124,7 @@
                                 </div>
                                 <div class="content-desc">
                                     <div class="content-desc-title">
-                                        <a href="!">
+                                        <a href="/wisata">
                                             <h3>Kecamatan Cimanggis</h3>
                                         </a>
                                     </div>
@@ -207,7 +138,7 @@
                                             permukaan laut dan daerah ini mempunyai curah hujan rata-rata 200,91 mm/tahun.
                                             <a href="https://id.wikipedia.org/wiki/Cimanggis,_Depok">Wikipedia</a>
                                         </p>
-                                        <a href="!" class="btn btn-md btn-orange" style="margin-top: 10px;">Read
+                                        <a href="/wisata" class="btn btn-md btn-orange" style="margin-top: 10px;">Read
                                             More</a>
                                     </div>
                                 </div>
@@ -218,7 +149,7 @@
                                 </div>
                                 <div class="content-desc">
                                     <div class="content-desc-title">
-                                        <a href="!">
+                                        <a href="/wisata">
                                             <h3>Kecamatan Cinere</h3>
                                         </a>
                                     </div>
@@ -233,7 +164,7 @@
                                             bagian dari Kecamatan Limo.
                                             <a href="https://id.wikipedia.org/wiki/Cinere,_Depok">Wikipedia</a>
                                         </p>
-                                        <a href="!" class="btn btn-md btn-orange" style="margin-top: 10px;">Read
+                                        <a href="/wisata" class="btn btn-md btn-orange" style="margin-top: 10px;">Read
                                             More</a>
                                     </div>
                                 </div>
@@ -282,11 +213,4 @@
                 </div>
             </section>
     </section>
-
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/swipe.js"></script>
-    </body>
-
-    </html>
 @endsection
