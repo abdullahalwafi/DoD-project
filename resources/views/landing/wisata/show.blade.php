@@ -2,7 +2,7 @@
 @section('content')
     <section class="section-ticket">
         <div class="header">
-            <img src="{{ asset('assets/landing/img/elephant.jpg') }}">
+            <img src="/storage/{{ $wisata->image }}">
             <div class="overlay">
                 <div class="desc">
                     <h3>{{ $wisata->nama }}</h3>

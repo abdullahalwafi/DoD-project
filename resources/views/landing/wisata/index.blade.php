@@ -35,7 +35,7 @@
             <div class="single-body">
                 @foreach ($wisata as $w)
                     <div class="col">
-                        <img src="{{ asset('/assets/landing/img/temple.jpg') }}">
+                        <img src="/storage/{{ $w->image }}">
                         <div class="overlay">
                             <div class="caption">
                                 <div class="caption-text">
