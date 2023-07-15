@@ -10,6 +10,15 @@
         <h3>Data Kecamatan</h3>
     </div>
 
+    @if (count($errors) > 0)
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
     <div class="page-content">
         <section class="section">
             <div class="card">
@@ -118,17 +127,18 @@
                                                                     <label for="title">Title</label>
                                                                     <input type="text" id="title"
                                                                         class="form-control" name="title"
-                                                                        placeholder="Title" value="{{$new->title}}" required>
+                                                                        placeholder="Title" value="{{ $new->title }}"
+                                                                        required>
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label for="image">Image</label>
                                                                     <input type="file" id="image"
                                                                         class="form-control" name="image"
-                                                                        accept="image/*" >
+                                                                        accept="image/*">
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label for="content">Content</label>
-                                                                    <textarea name="content" class="summernote"value="{{$new->content}}" required>{{$new->content}}</textarea>
+                                                                    <textarea name="content" class="summernote"value="{{ $new->content }}" required>{{ $new->content }}</textarea>
                                                                 </div>
                                                             </div>
                                                         </div>

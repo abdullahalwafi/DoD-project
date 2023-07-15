@@ -54,7 +54,7 @@
                                     <td>{{ $w->skor_rating }}</td>
                                     <td>Rp.{{ number_format($w->harga_tiket) }}</td>
                                     <td>
-                                        <a href="{{ url('wisata', $w->id) }}" class="btn btn-info btn-sm"><i
+                                        <a href="{{ url('wisata/show', $w->id) }}" class="btn btn-info btn-sm"><i
                                                 class="bi bi-eye"></i></a>
                                         <a href="{{ url('/admin/wisata/edit', $w->id) }}" class="btn btn-warning btn-sm"><i
                                                 class="bi bi-pen"></i></a>
