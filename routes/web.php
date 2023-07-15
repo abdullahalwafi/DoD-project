@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\Admin as ADMIN;
 use App\Http\Controllers\Landing as LANDING;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +19,6 @@ use App\Http\Controllers\Landing as LANDING;
 
 Route::get('/', [LANDING\LandingController::class, 'index']);
 Route::get('/admin', [ADMIN\DashboardController::class, 'index']);
-
 Route::get('/admin/wisata', [ADMIN\WisataController::class, 'index']);
 Route::get('/admin/wisata/edit/{id}', [ADMIN\WisataController::class, 'edit']);
 Route::get('/admin/wisata/create', [ADMIN\WisataController::class, 'create']);

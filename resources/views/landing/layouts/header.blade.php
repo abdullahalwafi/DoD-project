@@ -36,11 +36,11 @@
             <div class="navbar-item">
                 <a href="{{ url('/') }}" class="navbar-title">{{ config('app.name', 'Laravel') }}</a>
                 <ul>
-                    <li><a href="destination.html">Destination</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a data-slide="slides" data-slide-target="#discover">Discover</a></li>
-                    <li><a href="news.html"> News</a></li>
-                    <li><button class="btn-login" id="openLogin">LOGIN</button></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/wisata">Wisata</a></li>
+                    <li><a href="/jenis_wisata">Jenis</a></li>
+                    <li><a href="/kecamatan"> Kecamatan</a></li>
+                    <li><a href="/login">LOGIN</a></li>
                 </ul>
             </div>
         </div>
@@ -51,40 +51,13 @@
         <ul class="sidebar-list">
             <li><a href="" class="close"><span class="ion-android-close"></span></a></li>
             <li class="sidebar-list-hover"><a href="{{ url('/') }}">Home</a></li>
-            <li class="sidebar-list-hover"><a href="destination.html">Destination</a></li>
-            <li class="sidebar-list-hover"><a href="gallery.html">Gallery</a></li>
-            <li class="sidebar-list-hover"><a href="{{ url('/') }}#discover">Discover</a></li>
-            <li class="sidebar-list-hover"><a href="news.html"> News</a></li>
-            <li><a class="btn btn-orange btn-round" href="login.html"> Login</a></li>
+            <li class="sidebar-list-hover"><a href="/wisata">Wisata</a></li>
+            <li class="sidebar-list-hover"><a href="/jenis_wisata">JenisWisata</a></li>
+            <li class="sidebar-list-hover"><a href="/kecamatan">Kecamatan</a></li>
+            <li><a class="btn btn-orange btn-round" href="/login"> Login</a></li>
         </ul>
     </div>
 
     <!-- Sidebar Overlay -->
     <section class="sidebar-overlay"></section>
 
-    <!-- Login Form -->
-
-    <div class="login-form">
-        <div class="login-top">
-            <span class="close">&times;</span>
-        </div>
-        <div class="login">
-            <h3 class="text-center">
-                Bavel Log In
-            </h3>
-            <div class="form-input">
-                <label>Email</label> <br>
-                <input type="email" name="" class="form-control">
-            </div>
-            <div class="form-input">
-                <label>Password</label> <br>
-                <input type="password" name="" class="form-control">
-            </div>
-            <div class="form-input">
-                <button type="submit" class="btn btn-login">Log In</button>
-            </div>
-            <a href="" class="text-center">Don't have account ? Register now</a>
-        </div>
-    </div>
-
-    <div class="login-overlay"></div>
