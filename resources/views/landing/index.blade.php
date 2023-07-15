@@ -78,7 +78,7 @@
                 <div class="col">
                     <a href="/jenis_wisata/{{$item->id}}">
                         <img
-                            src="https://img.freepik.com/free-vector/film-design-concept_1284-13882.jpg?w=740&t=st=1688974282~exp=1688974882~hmac=b37b2a9a20c89db78a41d0e95f8ad13c89edd3f8687cd6b24452835e7a430dc2">
+                            src="{{ asset('assets/landing/img/Discovery/4.jpeg') }}">
                         <div class="caption" alt="Culture">
                             <p>{{ $item->nama }}</p>
                             <div class="line"></div>
@@ -108,28 +108,28 @@
                     <div class="row">
                         <div class="col" onclick="window.location.href='gallery.html'">
                             <img
-                                src="{{ asset('assets/landing/img/Gallery/27573391_1831430933557419_8533318736831053824_n.jpg') }}">
+                                src="{{ asset('assets/landing/img/Gallery/1.jpg') }}">
                             <div class="overlay">
                                 <span class="ion-search"></span>
                             </div>
                         </div>
                         <div class="col" onclick="window.location.href='gallery.html'">
                             <img
-                                src="{{ asset('assets/landing/img/Gallery/26870845_1740142096076715_486825953067008000_n.jpg') }}">
+                                src="{{ asset('assets/landing/img/Gallery/2.jpg') }}">
                             <div class="overlay">
                                 <span class="ion-search"></span>
                             </div>
                         </div>
                         <div class="col" onclick="window.location.href='gallery.html'">
                             <img
-                                src="{{ asset('assets/landing/img/Gallery/27880266_1798970387070331_5621832064107020288_n.jpg') }}">
+                                src="{{ asset('assets/landing/img/Gallery/3.jpg') }}">
                             <div class="overlay">
                                 <span class="ion-search"></span>
                             </div>
                         </div>
                         <div class="col" onclick="window.location.href='gallery.html'">
                             <img
-                                src="{{ asset('assets/landing/img/Gallery/29415561_163922580940067_2417069708558729216_n.jpg') }}">
+                                src="{{ asset('assets/landing/img/Gallery/4.jpeg') }}">
                             <div class="overlay">
                                 <span class="ion-search"></span>
                             </div>
