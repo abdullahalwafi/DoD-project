@@ -44,6 +44,7 @@ Route::prefix('/admin')->group(function () {
     Route::put('/kecamatan/update/{id}', [ADMIN\KecamatanController::class, 'update']);
     Route::delete('/kecamatan/destroy/{id}', [ADMIN\KecamatanController::class, 'destroy']);
     Route::resource('/news', ADMIN\NewsController::class);
+    Route::resource('/users', ADMIN\UsersController::class);
 });
 Route::get('/', [LANDING\LandingController::class, 'index']);
 Route::post('/komentar/store', [ADMIN\KomentarController::class, 'store']);
