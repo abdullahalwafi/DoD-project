@@ -72,7 +72,6 @@ class NewsController extends Controller
     {
         $news = $request->validate([
             'title' => 'required',
-            'image' => 'required',
             'content' => 'required'
         ]);
         // kalo kosong pake yg sebelumnya

@@ -7,7 +7,7 @@
     </header>
 
     <div class="page-heading">
-        <h3>Data Kecamatan</h3>
+        <h3>Data News</h3>
     </div>
 
     @if (count($errors) > 0)
@@ -116,9 +116,10 @@
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
-                                            <form class="form" action="/admin/news" method="post"
+                                            <form class="form" action="/admin/news/{{$new->id}}" method="post"
                                                 enctype="multipart/form-data">
                                                 @csrf
+                                                @method('put')
                                                 <div class="modal-body">
                                                     <div class="form-body">
                                                         <div class="row">
