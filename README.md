@@ -64,7 +64,10 @@ Berikut adalah langkah-langkah untuk menginstal dan menjalankan aplikasi ini:
 
 10. Akses generate storage:
 
-Generate storage diakses untuk mengenerate penyimpanan ke public. Akses melalui URL [http://localhost:8000/generate](http://localhost:8000/generate).
+    Generate storage diakses untuk mengenerate penyimpanan ke public. Akses melalui URL [http://localhost:8000/generate](http://localhost:8000/generate).
+
+11. Cut/copy data :
+    Pindahkan data yang ada di folder upload ke dalam storage/app/public/. untuk memindahkan data gambar seeder
 
 ## Fitur
 
