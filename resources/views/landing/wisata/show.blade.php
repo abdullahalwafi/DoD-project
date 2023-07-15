@@ -113,7 +113,7 @@
                 <div class="panel-body">
                     @foreach ($komentar as $kom)
                         <fieldset style="width: 100%; border-radius: 10px; margin-bottom: 20px">
-                            <legend>{{ $kom->users->name }}</legend>
+                            <legend>{{ $kom->user->name }}</legend>
                             <small>Tanggal : {{ $kom->tanggal }}</small><br>
                             <small>Rating : {{ $kom->rating }}</small><br>
                             {{ $kom->isi }}
